@@ -29,69 +29,69 @@
 #define IS_ENDNODE 																	1				// switch on endnode@Shees
 
 #define NETWORK_KEY																	0x23  ////adjust these 2 @tobecontinued
-#define RADIO_ID																		0x21 ////adjust these 2 @tobecontinued
+#define RADIO_ID																	0x21 ////adjust these 2 @tobecontinued
 #define SENSOR_FLAGS																0x00 //test1 if operates as planned should give 0x31 at receiver
-#define NUMOFSENSORSATT															8
+#define NUMOFSENSORSATT																8
 
-#define MOISTURE_ATTACHED														1
+#define MOISTURE_ATTACHED															1
 #define PH_ATTACHED																	0
-#define NITROGEN_ATTACHED														0
-#define POTASSIUM_ATTACHED													0
-#define PHOSPHORUS_ATTACHED													0
-#define DISSOLVED_O2_ATTACHED												0
+#define NITROGEN_ATTACHED															0
+#define POTASSIUM_ATTACHED															0
+#define PHOSPHORUS_ATTACHED															0
+#define DISSOLVED_O2_ATTACHED														0
 #define GSM_ATTACHED																0
 
 #define BATT1_ADDR																	0xE0 //replace this with addr for sensor 1
 #define BATT2_ADDR																	0xE0 //replace with addr to set for bat2
 
 #define MOISTURE_FLAG																0x01
-#define PH_FLAG																			0x02
+#define PH_FLAG																		0x02
 #define NITROGEN_FLAG																0x04
-#define PHOSPHORUS_FLAG															0x08
-#define POTASSIUM_FLAG															0x10
-#define DISSOLVED_O2_FLAG														0x20
+#define PHOSPHORUS_FLAG																0x08
+#define POTASSIUM_FLAG																0x10
+#define DISSOLVED_O2_FLAG															0x20
 #define BATTERY1_FLAG																0x40
 #define BATTERY2_FLAG																0x80
 
 
-#define GPS_RX																			GPIO_PIN_3
-#define GPS_TX																			GPIO_PIN_2
+#define GPS_RX																		GPIO_PIN_3
+#define GPS_TX																		GPIO_PIN_2
 
-#define GPS_PORT																		GPIOA
+#define GPS_PORT																	GPIOA
 
-#define MOISTURE_ENABLE_PIN													GPIO_PIN_10
+#define MOISTURE_ENABLE_PIN															GPIO_PIN_10
 #define PH_ENABLE_PIN																GPIO_PIN_12
-#define NITROGEN_ENABLE_PIN													GPIO_PIN_13
-#define PHOSPHORUS_ENABLE_PIN												GPIO_PIN_14
-#define POTASSIUM_ENABLE_PIN												GPIO_PIN_15
-#define DISSOLVED_O2_ENABLE_PIN											GPIO_PIN_14
+#define NITROGEN_ENABLE_PIN															GPIO_PIN_13
+#define PHOSPHORUS_ENABLE_PIN														GPIO_PIN_14
+#define POTASSIUM_ENABLE_PIN														GPIO_PIN_15
+#define DISSOLVED_O2_ENABLE_PIN														GPIO_PIN_14
 
-#define MOISTURE_ENABLE_PORT												GPIOC
-#define PH_ENABLE_PORT															GPIOC
-#define NITROGEN_ENABLE_PORT												GPIOA
-#define PHOSPHORUS_ENABLE_PORT											GPIOA
-#define POTASSIUM_ENABLE_PORT												GPIOA
-#define DISSOLVED_O2_ENABLE_PORT										GPIOC
+#define MOISTURE_ENABLE_PORT														GPIOC
+#define PH_ENABLE_PORT																GPIOC
+#define NITROGEN_ENABLE_PORT														GPIOA
+#define PHOSPHORUS_ENABLE_PORT														GPIOA
+#define POTASSIUM_ENABLE_PORT														GPIOA
+#define DISSOLVED_O2_ENABLE_PORT													GPIOC
 
 #define MOISTURE_PIN																GPIO_PIN_5
-#define PH_PIN																			GPIO_PIN_1
+#define PH_PIN																		GPIO_PIN_1
 #define NITROGEN_PIN																GPIO_PIN_15
-#define PHOSPHORUS_PIN															GPIO_PIN_14
+#define PHOSPHORUS_PIN																GPIO_PIN_14
 #define POTASSIUM_PIN																GPIO_PIN_13
-#define DISSOLVED_O2_PIN														GPIO_PIN_4
+#define DISSOLVED_O2_PIN															GPIO_PIN_4
 
 #define BATTERY1_SCL_PIN															GPIO_PIN_8 //I2C 1 SCL
 #define BATTERY1_SDA_PIN															GPIO_PIN_9 //I2C 1 SDA
 
-#define BATTERY2_SCL_PIN														GPIO_PIN_10 //I2C 1 SCL
-#define BATTERY2_SDA_PIN														GPIO_PIN_11 //I2C 1 SDA
+#define BATTERY2_SCL_PIN															GPIO_PIN_10 //I2C 1 SCL
+#define BATTERY2_SDA_PIN															GPIO_PIN_11 //I2C 1 SDA
 
 #define MOISTURE_PORT																GPIOC
-#define PH_PORT																			GPIOB
+#define PH_PORT																		GPIOB
 #define NITROGEN_PORT																GPIOB
-#define PHOSPHORUS_PORT															GPIOB
-#define POTASSIUM_PORT															GPIOB
-#define DISSOLVED_O2_PORT														GPIOC
+#define PHOSPHORUS_PORT																GPIOB
+#define POTASSIUM_PORT																GPIOB
+#define DISSOLVED_O2_PORT															GPIOC
 
 #define BATTERY_PORT																GPIOB   //uses I2C
 
@@ -100,20 +100,20 @@
 #define N_DIVTHRESH																	2
 #define P_DIVTHRESH																	2
 #define PO_DIVTHRESH																2
-#define D_O2_DIVTHRESH															1
-#define BAT1_DIVTHRESH															3 //volatge min in volts
-#define BAT2_DIVTHRESH															3 //voltage min in volts
+#define D_O2_DIVTHRESH																1
+#define BAT1_DIVTHRESH																3 //volatge min in volts
+#define BAT2_DIVTHRESH																3 //voltage min in volts
 
 #define TIMEOUTWAIT																	1000			  //1sec					@Shees
-#define CADWAIT																			500 				//0.5sec				@Shees
-#define CADAVAILABLEWAIT														0 					//1sec				@Shees
+#define CADWAIT																		500 				//0.5sec				@Shees
+#define CADAVAILABLEWAIT															0 					//1sec				@Shees
 #define LOWPOWERWAIT																2000 				//2sec				@Shees
 
-#define TX_OUTPUT_POWER                             17        	// dBm
+#define TX_OUTPUT_POWER                             								17        	// dBm
 
 
-#define RX_TIMEOUT_VALUE                            1000 //changed from 1sec
-#define BUFFER_SIZE                                 19 // Define the payload size here in bytes
+#define RX_TIMEOUT_VALUE                            								1000 //changed from 1sec
+#define BUFFER_SIZE                                 								19 // Define the payload size here in bytes
 
 uint8_t flags;
 int testvar=0; //@test
@@ -126,28 +126,28 @@ int8_t SnrValue = 0;
 
 #if defined( USE_MODEM_LORA )
 
-#define LORA_BANDWIDTH                              0         // [0: 125 kHz,
-                                                              //  1: 250 kHz,
-                                                              //  2: 500 kHz,
-                                                              //  3: Reserved]
-#define LORA_SPREADING_FACTOR                       7         // [SF7..SF12]
-#define LORA_CODINGRATE                             1         // [1: 4/5,
-                                                              //  2: 4/6,
-                                                              //  3: 4/7,
-                                                              //  4: 4/8]
-#define LORA_PREAMBLE_LENGTH                        8         // Same for Tx and Rx
-#define LORA_SYMBOL_TIMEOUT                         5         // Symbols
-#define LORA_FIX_LENGTH_PAYLOAD_ON                  false
-#define LORA_IQ_INVERSION_ON                        false
+#define LORA_BANDWIDTH                         									    0			// [0: 125 kHz,
+                                                              									//  1: 250 kHz,
+                                                              									//  2: 500 kHz,
+                                                              									//  3: Reserved]
+#define LORA_SPREADING_FACTOR                       								12			// [SF7..SF12]
+#define LORA_CODINGRATE                             								1			// [1: 4/5,
+                                                              									//  2: 4/6,
+                                                              									//  3: 4/7,
+                                                              									//  4: 4/8]
+#define LORA_PREAMBLE_LENGTH                        								8         // Same for Tx and Rx
+#define LORA_SYMBOL_TIMEOUT                         								5         // Symbols
+#define LORA_FIX_LENGTH_PAYLOAD_ON                  								false
+#define LORA_IQ_INVERSION_ON                        								false
 
 #elif defined( USE_MODEM_FSK )
 
-#define FSK_FDEV                                    25e3      // Hz
-#define FSK_DATARATE                                50e3      // bps
-#define FSK_BANDWIDTH                               50e3      // Hz
-#define FSK_AFC_BANDWIDTH                           83.333e3  // Hz
-#define FSK_PREAMBLE_LENGTH                         5         // Same for Tx and Rx
-#define FSK_FIX_LENGTH_PAYLOAD_ON                   false
+#define FSK_FDEV                                    								25e3      // Hz
+#define FSK_DATARATE                                								50e3      // bps
+#define FSK_BANDWIDTH                               								50e3      // Hz
+#define FSK_AFC_BANDWIDTH                           								83.333e3  // Hz
+#define FSK_PREAMBLE_LENGTH                         								5         // Same for Tx and Rx
+#define FSK_FIX_LENGTH_PAYLOAD_ON                   								false
 
 #else
     #error "Please define a modem in the compiler options."
