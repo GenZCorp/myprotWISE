@@ -1,0 +1,146 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Shees Usman, nil, LIC=JDARA-1GT35-BVQ1G-V1PTI-CJLCQ-HB60V
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.17
+Toolchain Path:  D:\SoftwareFiles\Keil Uvision Arm\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+F:\Local E\WISE\Communication\en.i-cube_lrwan\STM32CubeExpansion_LRWAN_V1.0.1\Projects\Multi\Applications\LoRa\PingPong\MDK-ARM\STM32L152RE-Nucleo\Lora.uvprojx
+Project File Date:  02/12/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\SoftwareFiles\Keil Uvision Arm\ARM\ARMCC\Bin'
+Rebuild target 'sx1276mb1mas'
+compiling stm32l1xx_nucleo.c...
+compiling sx1276mb1mas.c...
+compiling sx1276.c...
+compiling system_stm32l1xx.c...
+compiling stm32l1xx_hal.c...
+compiling stm32l1xx_hal_adc.c...
+compiling stm32l1xx_hal_cortex.c...
+compiling stm32l1xx_hal_pwr.c...
+compiling stm32l1xx_hal_pwr_ex.c...
+compiling stm32l1xx_hal_rcc_ex.c...
+compiling stm32l1xx_hal_rtc.c...
+compiling stm32l1xx_hal_rcc.c...
+compiling stm32l1xx_hal_spi_ex.c...
+compiling stm32l1xx_hal_rtc_ex.c...
+compiling stm32l1xx_hal_spi.c...
+compiling stm32l1xx_hal_tim_ex.c...
+compiling stm32l1xx_hal_uart.c...
+compiling stm32l1xx_hal_tim.c...
+compiling stm32l1xx_hal_adc_ex.c...
+compiling stm32l1xx_hal_i2c.c...
+assembling startup_stm32l152xe.s...
+compiling stm32l1xx_hal_dma.c...
+compiling stm32l1xx_hal_gpio.c...
+compiling debug.c...
+compiling hw_gpio.c...
+compiling hw_spi.c...
+compiling hw_rtc.c...
+compiling main.c...
+..\..\src\main.c(313): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+OISTURE_ENABLE_PORT, 
+OISTURE_ENABLE_PIN|
+H_ENABLE_PIN|
+ISSOLVED_O2_ENABLE_PIN, 0);
+..\..\src\main.c(314): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+ITROGEN_ENABLE_PORT, 
+ITROGEN_ENABLE_PIN|
+HOSPHORUS_ENABLE_PIN|
+OTASSIUM_ENABLE_PIN, 0);
+..\..\src\main.c(505): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+OISTURE_ENABLE_PORT,
+OISTURE_ENABLE_PIN,1);
+..\..\src\main.c(507): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+OISTURE_ENABLE_PORT,
+OISTURE_ENABLE_PIN,0);
+..\..\src\main.c(513): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+H_ENABLE_PORT,
+H_ENABLE_PIN,1);
+..\..\src\main.c(515): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+H_ENABLE_PORT,
+H_ENABLE_PIN,0);
+..\..\src\main.c(522): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+ITROGEN_ENABLE_PORT,
+ITROGEN_ENABLE_PIN,1);
+..\..\src\main.c(524): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+ITROGEN_ENABLE_PORT,
+ITROGEN_ENABLE_PIN,0);
+..\..\src\main.c(530): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+HOSPHORUS_ENABLE_PORT,
+HOSPHORUS_ENABLE_PIN,1);
+..\..\src\main.c(532): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+HOSPHORUS_ENABLE_PORT,
+HOSPHORUS_ENABLE_PIN,0);
+..\..\src\main.c(538): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+OTASSIUM_ENABLE_PORT,
+OTASSIUM_ENABLE_PIN,1);
+..\..\src\main.c(540): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+OTASSIUM_ENABLE_PORT,
+OTASSIUM_ENABLE_PIN,0);
+..\..\src\main.c(546): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+ISSOLVED_O2_ENABLE_PORT,
+ISSOLVED_O2_ENABLE_PIN,1);
+..\..\src\main.c(548): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(
+ISSOLVED_O2_ENABLE_PORT,
+ISSOLVED_O2_ENABLE_PIN,0);
+..\..\src\main.c(564): warning:  #177-D: variable "voltagehigherbits" was declared but never referenced
+  							uint8_t voltagehigherbits = 0x08,voltagelowerbits = 0x09;
+..\..\src\main.c(564): warning:  #177-D: variable "voltagelowerbits" was declared but never referenced
+  							uint8_t voltagehigherbits = 0x08,voltagelowerbits = 0x09;
+..\..\src\main.c(1036): warning:  #1-D: last line of file ends without a newline
+  /*LoRa function define end*/
+..\..\src\main.c: 17 warnings, 0 errors
+compiling vcom.c...
+compiling stm32l1xx_hal_msp.c...
+compiling stm32l1xx_hw.c...
+compiling delay.c...
+compiling stm32l1xx_it.c...
+compiling low_power.c...
+compiling utilities.c...
+compiling timeServer.c...
+linking...
+Program Size: Code=25044 RO-data=700 RW-data=80 ZI-data=2536  
+FromELF: creating hex file...
+".\sx1276mb1mas\NUCLEO_CUBE_LORA.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  F:\Local E\WISE\Communication\en.i-cube_lrwan\STM32CubeExpansion_LRWAN_V1.0.1\Projects\Multi\Applications\LoRa\PingPong\MDK-ARM\STM32L152RE-Nucleo\RTE
+  D:\SoftwareFiles\Keil Uvision Arm\ARM\PACK\Keil\STM32L1xx_DFP\1.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:23
+</pre>
+</body>
+</html>
